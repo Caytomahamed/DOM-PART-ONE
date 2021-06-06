@@ -37,6 +37,130 @@ const siteContent = {
   },
 };
 
+
+
+// nav-bar  section
+
+
+
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+
+
+let menu = document.querySelectorAll("a")
+
+menu[0].textContent = siteContent["nav"]["nav-item-1"]
+menu[1].textContent = siteContent["nav"]["nav-item-2"]
+menu[2].textContent = siteContent["nav"]["nav-item-3"]
+menu[3].textContent = siteContent["nav"]["nav-item-4"]
+menu[4].textContent = siteContent["nav"]["nav-item-5"]
+menu[5].textContent = siteContent["nav"]["nav-item-6"]
+
+
+
+
+
+//cta section 
+
+
+
+
+
+let bigTitle = document.querySelector(".cta-text h1")
+let bigLog = document.getElementById("cta-img")
+let btn = document.querySelector(".cta-text button")
+
+
+
+
+bigTitle.textContent = siteContent["cta"]["h1"]
+btn.textContent =siteContent['cta']['button']
+bigLog.setAttribute('src' , siteContent["cta"]["img-src"])
+
+
+
+
+
+
+// top contett 
+
+
+
+
+
+let  subTitle = document.querySelectorAll('.top-content h4')
+
+subTitle[0].textContent = siteContent['main-content']['features-h4']
+subTitle[1].textContent = siteContent['main-content']['about-h4']
+
+let addTop = document.querySelectorAll('.top-content p')
+
+addTop[0].textContent = siteContent['main-content']['features-content']
+addTop[1].textContent = siteContent['main-content']['about-content']
+
+
+
+
+
+//middle img 
+
+
+
+let middleImg = document.querySelector('.middle-img')
+middleImg.setAttribute('src' , siteContent['main-content']['middle-img-src'])
+
+
+
+
+
+//bottom content 
+
+
+
+let addHeading =document.querySelectorAll('.bottom-content h4')
+addHeading[0].textContent=siteContent['main-content']['services-h4']
+addHeading[1].textContent=siteContent['main-content']['product-h4']
+addHeading[2].textContent=siteContent['main-content']['vision-h4']
+
+let addPara=document.querySelectorAll('.bottom-content p')
+addPara[0].textContent=siteContent['main-content']['services-content']
+addPara[1].textContent=siteContent['main-content']['product-content']
+addPara[2].textContent=siteContent['main-content']['vision-content']
+
+
+
+
+
+//contact 
+
+
+
+let contactTitle =document.querySelector('.contact h4')
+contactTitle.textContent =siteContent['contact']['contact-h4']
+
+console.log(contactTitle)
+
+let contactPara =document.querySelectorAll('.contact p')
+contactPara[0].textContent =siteContent['contact']['address']
+contactPara[1].textContent =siteContent['contact']['phone']
+contactPara[2].textContent =siteContent['contact']['email']
+
+console.log(contactPara)
+
+
+
+
+
+// footer
+
+
+
+let copyRight = document.querySelector('footer p')
+copyRight.textContent =siteContent['footer']['copyright']
+console.log(copyRight)
